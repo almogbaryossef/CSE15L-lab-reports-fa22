@@ -55,4 +55,4 @@ hi hi hi
 shalom shalom
 hola hola hola
 ```
-Everything seems to be working as expected.
+The photo shows in the preview, but not in deployment. The same occurrs with the horizontal line using ***.
