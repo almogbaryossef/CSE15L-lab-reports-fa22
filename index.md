@@ -65,4 +65,5 @@ Everything works as expected.
 
 
 [Lab Report 1](lab-report-1-week-0.html)
-[Lab Report 2](https://almogbaryossef.github.io/CSE15L-lab-reports-fa22/lab-report-1-week-0.html)
+[Lab Report 2](https://almogbaryossef.github.io/CSE15L-lab-reports-fa22.md/lab-report-1-week-0.html)
+[Lab Report 3](https://github.com/almogbaryossef/CSE15L-lab-reports-fa22/blob/b8ddb11331b86ba4e6d3d4bd8046287ddbebae71/lab-report-1-week-0.md/Screen%20Shot%202022-09-27%20at%201.39.01%20PM.png)
