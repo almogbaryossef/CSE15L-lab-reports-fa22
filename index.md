@@ -62,3 +62,7 @@ I accidentally got paint on my tote bag during a tie dye activity and that makes
 
 
 Everything works as expected.
+
+
+[Lab Report 1](lab-report-1-week-0.html)
+[Lab Report 2](https://almogbaryossef.github.io/CSE15L-lab-reports-fa22/lab-report-1-week-0.html)
