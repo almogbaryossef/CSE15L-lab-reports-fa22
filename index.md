@@ -55,4 +55,4 @@ hi hi hi
 shalom shalom
 hola hola hola
 ```
-Header #1 and #2 seem to be the same, The list remains as dashes and stars rather than becoming dots, the horizontal line didn't work for some reason. Inline code changes the letters' color, but doesn't highlight them. image & link did not work.
+Everything seems to be working as expected.
