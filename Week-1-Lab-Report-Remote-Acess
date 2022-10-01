@@ -1,0 +1,13 @@
+# **Lab Report 1: Remote Access**
+
+This report gives a detailed step-by-step tutorial about establishing a remote connection between the student's private device and a UCSD platform that has a s unique account for each stuedent in CSE15L.
+
+## Step 1
+- Every student has an existing course-specific account for CSE15L at this [website](https://sdacs.ucsd.edu/~icc/index.php).
+- After opening the link, enter your username and your student ID number as instructed. After looking up the account, a new webpage will appear. At the top of the page there is an option to change the password to the account. You must click on that link and change the password. Make sure to write down the password in your notes in case you cannot remember it in the future.
+- If your password was changed successfully, a message will appear saying that it would take approximately 15 minutes for the password to be processed.
+
+## Step 2
+- While waiting, if you do not have Visual Studio Code installed, go to [this link](https://code.visualstudio.com/) and download it.
+- Since I have taken CSE 11 in the last winter quarter, I already had VS Code installed.
+- The homepage of VS Code should look similar to the following screenshot:
