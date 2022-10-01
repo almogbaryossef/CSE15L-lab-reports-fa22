@@ -65,5 +65,8 @@ As you can see, I had a typo (replaced @ with .), which caused me to be unable t
 ![Image](https://github.com/almogbaryossef/CSE15L-lab-reports-fa22/issues/7#issue-1393212988)
 
 ## Step 7
+- You may now try to make find ways to make the process of editing a file and the copying it into a the server from your client.
+- Below is a screenshot of my code and edits.
+![Image](https://github.com/almogbaryossef/CSE15L-lab-reports-fa22/issues/8#issue-1393231868)
 
 You are done. Good job :)
