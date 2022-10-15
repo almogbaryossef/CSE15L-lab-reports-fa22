@@ -1,4 +1,4 @@
-# **Lab Report 2: **
+# **Lab Report 2**
 
 ## **Part 1**
 The code for my SearchEngine is below.
