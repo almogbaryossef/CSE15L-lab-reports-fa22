@@ -99,7 +99,7 @@ The average returned would be incorrect whenever there are duplicates of the low
 The second buggy method I chose is **filter**. Below is a screenshot of the failure-inducing input (the test), as well as the symptom (output).
 ![Image](https://user-images.githubusercontent.com/47935429/195969051-ce79bb08-7b6d-41de-860b-25e7e3dc9c1f.png)
 
-The fixed codeL
+The fixed code:
 ![Image](https://user-images.githubusercontent.com/47935429/195969060-e37c3601-e276-4948-81c4-7995b2571320.png)
 
 The symptom was that the first element in the list that was returned was the last element in the expected list. Since the original code of filter added the elements that satisfied the StringChecker to index 0, the order of the items in the array list was flipped. In order to fix this, I removed the index from the add method, and used the regular add(item) method which always adds the item to the end of the list.
