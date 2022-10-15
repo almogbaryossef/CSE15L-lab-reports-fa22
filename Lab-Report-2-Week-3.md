@@ -89,6 +89,7 @@ The symptom (output):
 ![Image](https://user-images.githubusercontent.com/47935429/195968301-4121bb7b-fc30-4263-b8ce-213490bd43e6.png)
 
 The fixed code:
+
 ![Image](https://user-images.githubusercontent.com/47935429/195968353-227eafb4-b738-49f3-b91d-7c645248982d.png)
 
 The symptom was that when the elements in the array are equal in value, the mean that was returned was zero. Since all of the numbers were equal to lowest, none of them were added to sum, so it remained zero. In order to fix this problem, I added another variable, "count." When the for-loop finds the lowest item, it sets count to 1. If count is set to 1, the item must be added to the sum regardless of whether it is equal to lowest. Therefore, only the first lowest item would not be added to the sum, in case there are multiple items with the same lowest value.
