@@ -65,19 +65,24 @@ class  SearchEngine {
     }
 }
 ```
-When first opening the link generated, it leads us to the following web:
+
+Which methods in your code are called
+What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class
+If those values change, how they change by the time the request is done processing
+
+We first enter in the terminal "javac SearchEngine.java and Server.java" in order to compile the program. We then enter "java SearchEngine 4893" (where 4893 is a random port number chosen for this exercise). This calls the main method in SearchEngine which takes in as an argument the number provided and creates a new server with that port and a StringHandler (which handles the path and any other parts of the link hat may be present), and returns the link to that server. Since there is no path (simply a hidden "/"), the handleRequest mathod in StringHandler simply returns "Text:". The link leads to the following web:
 ![Image](https://user-images.githubusercontent.com/47935429/195967456-773e1b46-f297-45eb-acac-f52edfa28ee2.png)
 
-Then, if we want to add an item "apple," we use the add method which is recognized as /add (path), and enter the query as the element we want to add (s=apple).  we get the following:
+At this point, we might decide that we want to add some fuit to the list. In order to do that, we would need to add a path and a query to the link that would be recognized by StringHandler. I designed my StringHandler so it has the handleRequest method, so when the path is "/add", the first argument (which should be a string) of the query would be added to a list ("l") that contains all fruit added. In order to confirm that the fuit has been added, for instance we can add "apple", the text change to Added every time we use "/add" correctly. Below is an example of adding the item "apple" to l, and we can see that instead of "Text:" there is "Added", which assures us that "apple" is now in l.
 ![Image](https://user-images.githubusercontent.com/47935429/195967494-100344d3-5875-4349-9989-27a1b4569011.png)
 
-I have added a few more items: banana, pineapple, and another apple.
+Using the method above, I kept the path /add and changed the parameter to be different fuit that I wanted to add to l: banana, pineapple, and another apple. Every time handleRequest is called (every time we reload the web), it goes through the possible valid paths until it finds "/add", and then it follows the steps for this "if" case. The first argument (second parameter, tecnically, since s is the first parameter) that is stored in parameters(1) is the item we add, and changed every time we change the item (the String input in the query).
 ![Image](https://user-images.githubusercontent.com/47935429/195967503-947d10fa-311c-4ba6-a8a9-46ed5135c1ae.png)
 
-Next, we can use the search method to get all items that contain the sequence of letters "app." The path is identified as /search, and the query contains what we are searching for: s=app.
+Next, we can use the search method to get all items that contain a specific substring chosen by us. The String may be in one or more of the items in "l", and the search method would return all items that contain the given string. If none of the items contain the string, then no items will be returned. In the screenshot below I chose to use the String "app". The handleRequest method identifies the path as "/search", and then goes through the array list "l" and adds to a String variable all the items that contain the argument "app" (which is found in the query). Finally, it returns the String containing the appropriate items. Below is the result: 
 ![Image](https://user-images.githubusercontent.com/47935429/195967510-a2f7be5c-8670-4a78-a4e3-a04377c99066.png)
 
-Also, to make sure that everything I have added is indeed in the list, I searched for all items that have the letter "a."
+Also, to make sure that everything I have added is indeed in the list, I searched for all items that have the letter "a".
 ![Image](https://user-images.githubusercontent.com/47935429/195967517-d24fe52c-6d40-4369-81c4-33340b378662.png)
 
 
