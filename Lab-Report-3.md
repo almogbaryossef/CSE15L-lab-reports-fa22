@@ -15,7 +15,8 @@ almogbar@Almogs-MacBook-Pro docsearch % grep -c "virus" technical/biomed/rr37.tx
 almogbar@Almogs-MacBook-Pro docsearch % grep -c "asthma" technical/biomed/rr37.txt
 145
 ```
-Here we are trying to search for the word "virus" in one of the textfiles in biomed, but as we can see it
+Here we are trying to search for the word "virus" in one of the text files in biomed, but as we can see there are no instances of it in that file, meaning that if we want to read about viruses, we probably wouldn't spend time reading this text. However, if we wanted to read about asthma, this would most likely be a good source as it contains the words asthma 145 times.
+  
 Example 2:  
 ```
 almogbar@Almogs-MacBook-Pro docsearch % grep -c "cell" technical/biomed/*
@@ -857,7 +858,9 @@ technical/biomed/rr37.txt:0
 technical/biomed/rr73.txt:14
 technical/biomed/rr74.txt:2
 ```
+In this command we looked for the count of the word "cell" in all files in the biomed folder. The output contains the full path for each file corresponding to the number of times "cell" appeared in that file.
   
+
 Example 3:
 ```
 almogbar@Almogs-MacBook-Pro docsearch % grep -c "public" technical/government/M
@@ -867,6 +870,8 @@ technical/government/Media/Attorney_gives_his_time.txt:1
 technical/biomed/cc343.txt:0
 technical/911report/chapter-2.txt:12
 ```
+In this example we looked for the count of the word "public" in three spearate specific files. Similarly to example 2, the output contained the paths of each file with the number of instances of "public" in that file.
+  
   
   
 ## Command-line Option 2: -v
@@ -1014,6 +1019,7 @@ almogbar@Almogs-MacBook-Pro docsearch % grep -v "a" technical/biomed/cc4.txt
       
     
 ```
+Here we looked for all the lines in one file that do not contain the symbol "a" ("A" is still allowed). As we can see, there are a lot of empty lines used for spacing that are returned.
   
 Example 2:  
 ```
@@ -1852,7 +1858,9 @@ technical/government/Gen_Account_Office/ai2132.txt:
 technical/government/Gen_Account_Office/ai2132.txt:
 technical/government/Gen_Account_Office/ai2132.txt:
 ```
+In this example we searched for all the lines in two specific files that do not contain the symbol "e". As we can see, the output contains the path to each file next to each line of it that was identified as not containing "e". There are a lot of paths with "nothing" next to them because they represent spaces/empty lines that were added to separate between sections in the different file texts. Java first lists all matching lines from the first file we provided as an input, then those from the second file (so the paths in the first part are all the same, and the paths in the second part are also the same, each corresponding to one file).
   
+
 Example 3:
 ```
 almogbar@Almogs-MacBook-Pro docsearch % grep -v "" technical/biomed/*
@@ -1864,7 +1872,9 @@ grep: technical/government/Gen_Account_Office: Is a directory
 grep: technical/government/Media: Is a directory
 grep: technical/government/Post_Rate_Comm: Is a directory
 ```
-
+Here I first attempted to search for all lines in biomed that don't have "", or an empty string. Since by the nature of String any string s is equal to s+"", no lines were foound that matched this pattern. When I tried to look for "" in technical, an error was returned because the government sub-directory has sub-directories, so java could not complete the process of searching for "" in folders that are not text files.
+  
+  
   
 ## Command-line Option 3: -A n
 -A n returns the line containing the pattern as well as n lines after that line. This command can be useful in many situtations. For example, if we are looking for the definiton of something, we might want to find the word to be defined as well as the few lines afterwards since they are likely to contain the definition. Another instance we might want to use it is if we are looking for a specific quatation in a book and can only remember its beginning. Also, we might want to look for something more general that can have different descriptions. For example, if Bob is a student who wants to register for a course that uses ptyhon, he could search in the course catalog all the places the word "python" appears as well as the few sentences after the word in order to read more about the course.
@@ -1878,6 +1888,7 @@ almogbar@Almogs-MacBook-Pro docsearch % grep -A 3 "Although the evidence" techni
         community, there are also reasons to be optimistic. The relative increase in the number of
         publications, especially when corrected for the amount of money available in research and
 ```
+In this example, I knew that there is a line in the file journal.pbio.0020001.txt that starts with "Although the evidence". Thus, I used grep to find the line containing this phrase as well as the three lines following that line. I now know that there aren't any other sentences in that file that contain the string "Although the evidence" since only one result was returned.
   
   
 Example 2:
@@ -1956,7 +1967,7 @@ almogbar@Almogs-MacBook-Pro docsearch % grep -A 2 "however" technical/911report
                 integrate awareness among agencies or to facilitate interagency response.
             
 ```
-  
+In this example, I looked for all instances of the word "however" in a specific file a well as the two first lines following it. 
   
 Example 3:
 ```
@@ -1984,3 +1995,4 @@ technical/biomed/1471-2210-2-4.txt-        all-trans retinoic acid or
 technical/biomed/1471-2210-2-4.txt-        9-cis retinoic acid (RXR α,β,γ Since
 
 ```
+Since I looked for the phrase "The family" in all text files in biomed, each line returned (5 + the one with "The family") is placed in the output to the right of the path of the file that it is from. Whenever we use string with more than one file, we will always get the path of the file next to the result so we know exactly what output corresponds to each file.
