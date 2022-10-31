@@ -8,13 +8,13 @@ The format which we used was: grep <some string> <file>. The command grep can al
 We use the format: grep -c <pattern> <file1> <file2> ....
 
 Example 1:
-![Image](-cExample1)
+![Image](-cExample1.png)
   
 Example 2:  
-![Image](-cExample2)
+![Image](-cExample2.png)
   
 Example 3:
-![Image](-cExample3)
+![Image](-cExample3.png)
   
   
 ## Command-line Option 2: -v
@@ -22,13 +22,13 @@ Example 3:
 We use the format: grep -v <pattern> <file1> <file2> ...
 
 Example 1:
-![Image](-vExample1)
+![Image](-vExample1.png)
   
 Example 2:  
-![Image](-vExample2)
-![Image](-vExample2.2)
+![Image](-vExample2.png)
+![Image](-vExample2.2.png)
   
 Example 3:
-![Image](-vExample3)
+![Image](-vExample3.png)
   
 
