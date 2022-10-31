@@ -10,4 +10,25 @@ We use the format: grep -c <pattern> <file1> <file2> ....
 Example 1:
 ![Image](-cExample1)
   
+Example 2:  
+![Image](-cExample2)
+  
+Example 3:
+![Image](-cExample3)
+  
+  
+## Command-line Option 2: -v
+**-v** returnss all the lines that do not fulfill the pattern prvided in the chosen file(s).
+We use the format: grep -v <pattern> <file1> <file2> ...
+
+Example 1:
+![Image](-vExample1)
+  
+Example 2:  
+![Image](-vExample2)
+![Image](-vExample2.2)
+  
+Example 3:
+![Image](-vExample3)
+  
 
