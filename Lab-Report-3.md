@@ -8,6 +8,6 @@ The format which we used was: grep <some string> <file>. The command grep can al
 We use the format: grep -c <pattern> <file1> <file2> ....
 
 Example 1:
-![Image](Users/almogbar/Desktop/-cExamle1)
+![Image](-cExample1)
   
 
