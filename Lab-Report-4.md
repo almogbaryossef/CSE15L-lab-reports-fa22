@@ -1,7 +1,7 @@
 # Lab Report 4
 
 ## Part 1 - Sequence of vim commands to replace all "start" with "base"
-1. Open the file using vim by typing "vim docSearchServer.java"
+1. Open the file using vim by typing **vim DocSearchServer.java**
 ![image](1.png)
 
 2. Press \<Enter> in order to view the file in vim
