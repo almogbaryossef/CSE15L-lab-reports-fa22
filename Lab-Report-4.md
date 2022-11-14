@@ -4,7 +4,7 @@
 1. Open the file using vim by typing "vim docSearchServer.java"
 ![image](1.png)
 
-2. \<Enter>
+2. Press \<Enter> in order to view the file in vim
 ![image](2.png)
   
 3. Type **:%s/\<start\>/base/g** in order to substitute all instances of **start** with **base**.
