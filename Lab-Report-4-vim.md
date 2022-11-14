@@ -1,4 +1,4 @@
-# Lab Report 4
+# Lab Report 4 - Vim
 
 ## Part 1 - Sequence of vim commands to replace all "start" with "base"
 1. Open the file using vim by typing **vim DocSearchServer.java**
