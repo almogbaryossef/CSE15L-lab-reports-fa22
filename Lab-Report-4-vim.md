@@ -1,13 +1,13 @@
 # Lab Report 4 - Vim
 
-## Part 1 - Sequence of vim commands to replace all "start" with "base"
-1. Open the file using vim by typing **vim DocSearchServer.java**
+## Part 1 - Sequence of vim commands to replace all **start** with **base**
+1. Open the file using vim by typing **vim DocSearchServer.java**.
 ![image](1.png)
 
 2. Press \<Enter> in order to view the file in vim
 ![image](2.png)
   
-3. Type **:%s/\<start\>/base/g** in order to substitute all instances of **start** with **base**.
+3. Type \**:%s/\<start\>/base/g**\ in order to substitute all instances of **start** with **base**.
 ![image](3.png)
   
 4. Press \<Enter> in order to execute the substitution command above.
