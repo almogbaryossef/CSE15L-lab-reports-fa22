@@ -7,3 +7,5 @@
 [Lab Report 3](Lab-Report-3)
 
 [Lab Report 4](Lab-Report-4-vim)
+
+[Lab Report 5](Lab-Report-5)
