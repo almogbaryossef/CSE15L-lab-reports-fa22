@@ -11,7 +11,13 @@
 ```
 :%s/\<start\>/base/g
 ```
-in order to substitute all instances of **start** with **base**.
+in order to substitute all instances of **start** with **base**. 
+**%** tells vim that we want to search&replace start for base in the entire file (the range)
+**:...g** means that the command/pattern that we want to form will occur recursively for each line in the file that is within the range
+**:s** is the substitute command, so in this case s tells vim that we will want to substitute one thing with another somewhere in the file (this is the action we want it to take)
+**/start** the / means that whatever words follows it, in this case it is start, is the word it should search for. 
+**\<*some word*\>** indicates that we are searching for a whole word, and we are marking its beginning and end.
+Therefore, this command means that we are substituting in each line that contains the whole sequence of letters *start* with base, and we do that for all lines in the file. We first search for the next occurrence of start, substitute it with base, and if this is not the end of the file, execute the search/substitute again until there are no more lines in our range (file) that contain start.
 ![image](3.png)
   
 4. Press \<Enter> in order to execute the substitution command above.
